@@ -1,0 +1,7 @@
+.Insurance{
+    padding: 16px;
+}
+.Insurance label{
+    width: 100px;
+    display: inline-block;
+}
