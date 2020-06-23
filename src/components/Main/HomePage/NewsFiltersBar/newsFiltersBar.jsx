@@ -11,8 +11,8 @@ const NewsFiltersBar = (props) =>(
 );
 
 NewsFiltersBar.propTypes = {
-    onCategoryChange: PropTypes.func.isRequired,
-    onSearchPhraseChange: PropTypes.func.isRequired,
+    // onCategoryChange: PropTypes.func.isRequired,
+    // onSearchPhraseChange: PropTypes.func.isRequired,
 }
 
 export default NewsFiltersBar;
