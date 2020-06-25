@@ -18,10 +18,8 @@ const LanguagesDrop = ({ language, onLanguageChange}) => (
   options={countryOptions}
   onChange={(event, data) => onLanguageChange(data.value)}
 />
-
 );
  
-
 export default LanguagesDrop;
 
 
@@ -44,12 +42,11 @@ export default LanguagesDrop;
 //       render() {
 //         return (
   // <select value={this.state.value} onChange={this.onValueChange}>
-  // //                   {languages.map((lang) =>(
-  // //                       <option key={lang} value={lang}>{lang}</option>
-  // //                   ))}
-  // //               </select> 
-//         
-        
+  // //    {languages.map((lang) =>(
+  // // <option key={lang} value={lang}>{lang}</option>
+  // // ))}
+  // // </select> 
+//              
 //         );
 //       }};
 

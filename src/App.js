@@ -3,6 +3,7 @@ import {BrowserRouter} from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/header';
 import Main from './components/Main/main';
+import Footer from './components/Footer/footer';
 import LanguageContext from './languageContext';
 
 const App =() => {
@@ -13,6 +14,7 @@ const App =() => {
     <LanguageContext.Provider value={lang}>
       <Header onLanguageChange={setLang} />
       <Main />
+      <Footer />
       </LanguageContext.Provider>
     </BrowserRouter>
 );

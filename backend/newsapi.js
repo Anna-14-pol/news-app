@@ -8,11 +8,11 @@ const EVERYTHING_ENDPOINT_PATH = '/everything';
 
 const getMainArticles = (query) => superagent
 .get(`${NEWS_API_URL}${TOP_HEADLINES_ENDPOINT_PATH}`)
-.query({country: 'pl',...query, apiKey: API_KEY, pageSize: 30});
+.query({country: 'pl',...query, apiKey: API_KEY, pageSize: 3});
 
 const getInsuranceNews = (query) => superagent
 .get(`${NEWS_API_URL}${EVERYTHING_ENDPOINT_PATH}`)
-.query({language: 'pl',...query, apiKey: API_KEY, q: 'insurance', pageSize: 30});
+.query({language: 'pl',...query, apiKey: API_KEY, q: 'insurance', pageSize: 3});
 
 
 

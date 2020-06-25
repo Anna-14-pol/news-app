@@ -3,6 +3,7 @@ import {Switch, Route} from 'react-router-dom';
 import HomePage from './HomePage/home';
 import InsurancePage from './insurance';
 import HelpPage from './help';
+import './main.css';
 
 const Main =()=>(
     <main>
