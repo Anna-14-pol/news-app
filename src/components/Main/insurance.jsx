@@ -16,14 +16,21 @@ const InsurancePage = () => {
 
     const fetchArticles = useCallback(() =>{
         if (startDate>endDate) return alert('niewłaściwe daty');
-        console.log(lang);
-        fetch(`http://localhost:4000/insurance-news?from=${startDate.toISOString()}&to=${endDate.toISOString()}&language=${lang}`)
+        
+        fetch(`http://localhost:4000/insurance-news?from=${startDate.toISOString()}&to=${endDate.toISOString()}&language=${lang}`) 
         .then(response=> response.json())
-        .then((res)=> setResults(res));
+        .then(res=> {
+            setResults(res);
+        });
     },[startDate, endDate, lang]);
 
+    // useEffect(() => {
+    //     setPage(1);
+    // }, [startDate, endDate]);
+
     useEffect(()=>{ fetchArticles(); }, [fetchArticles]);
-    // useEffect(() => { fetchArticles();}, [startDate, endDate, lang]);
+
+    if (!results) return null;
 
     return(
     <div className='Insurance'>
@@ -38,6 +45,6 @@ const InsurancePage = () => {
        {results ? (<NewsList articles={results.articles} />) : null}
     </div>
 );
-};
+}
 
 export default InsurancePage;

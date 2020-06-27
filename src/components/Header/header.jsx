@@ -23,10 +23,10 @@ class Header extends Component{
           onClick={this.handleItemClick}>
             Insurance News
           </Menu.Item>
-          <Menu.Item as={Link} to='/help' 
+          {/* <Menu.Item as={Link} to='/help' 
           name='help' active={activeItem==='help'} onClick={this.handleItemClick}>
             Help
-          </Menu.Item>
+          </Menu.Item> */}
           <Menu.Menu position='right'>
             <Menu.Item>
               <LanguagesDrop onLanguageChange={this.props.onLanguageChange} />
