@@ -1,4 +1,7 @@
 footer {
-    height: 50px;
-    background-color: rgb(208, 223, 230);
+    height: 25px;
+    background-color: rgb(208, 223, 230, 0.7);
+    bottom: 0;
+    position: fixed;
+    width: 100%;
 }

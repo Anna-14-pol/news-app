@@ -17,16 +17,12 @@ const InsurancePage = () => {
     const fetchArticles = useCallback(() =>{
         if (startDate>endDate) return alert('niewłaściwe daty');
         
-        fetch(`http://localhost:4000/insurance-news?from=${startDate.toISOString()}&to=${endDate.toISOString()}&language=${lang}`) 
+        fetch(`http://localhost:4000/insurance-news?to=${startDate.toISOString()}&from=${endDate.toISOString()}&language=${lang}`) 
         .then(response=> response.json())
         .then(res=> {
             setResults(res);
         });
     },[startDate, endDate, lang]);
-
-    // useEffect(() => {
-    //     setPage(1);
-    // }, [startDate, endDate]);
 
     useEffect(()=>{ fetchArticles(); }, [fetchArticles]);
 

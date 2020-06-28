@@ -62,13 +62,14 @@ class HomePage extends React.Component {
                 <NewsFiltersBar onCategoryChange={this.setCategory} onSearchPhraseChange={this.setSearchPhrase} />
                 <NewsList articles={results.articles}/>
                 {results&&results.totalResults? (<Pagination defaultActivePage={1}
-                firstItem={null}
-                lastItem={null}
-                pointing
-                secondary
+                // firstItem={null}
+                // lastItem={null}
+                // pointing
+                // secondary
                 totalPages={Math.ceil(results.totalResults/6)}
                 onPageChange={this.onPageChange}
                  />) : null}
+                
             </div>
         )}
 }

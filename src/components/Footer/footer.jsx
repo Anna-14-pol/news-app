@@ -1,6 +1,6 @@
 import './footer.css';
 import React from 'react';
-import { Pagination, SearchResults } from 'semantic-ui-react';
+// import { Pagination, SearchResults } from 'semantic-ui-react';
 
 const Footer = () =>(
     <footer>
