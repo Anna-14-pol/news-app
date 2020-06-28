@@ -10,12 +10,12 @@ const countryOptions = [
   { key: 'ro', value: 'ro', flag: 'ro', text: 'Romania' },
 ]
 const LanguagesDrop = ({ language, onLanguageChange}) => (
+
   <Dropdown
   placeholder='Select Country'
-  fluid
+  // fluid
   search
-  selection
-  options={countryOptions}
+  selection options={countryOptions}
   onChange={(event, data) => onLanguageChange(data.value)}
 />
 );
