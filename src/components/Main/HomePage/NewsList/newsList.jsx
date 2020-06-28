@@ -5,7 +5,7 @@ import NewsCard from './newsCard';
 const NewsList = (props) => (
 <div id='NewsList'>
     {props.articles.map((item)=>(
-        <NewsCard 
+        <NewsCard key={item.id}
               urlToImage={item.urlToImage} 
               title={item.title} 
               publishedAt={item.publishedAt}
