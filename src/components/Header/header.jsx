@@ -16,7 +16,7 @@ class Header extends Component{
         <Menu>
           <Menu.Item as={Link} to='/' 
           name='home'
-          exact
+          exact={activeItem.toString()}
           //  active={activeItem==='home'} 
            onClick={this.handleItemClick}>
             Home

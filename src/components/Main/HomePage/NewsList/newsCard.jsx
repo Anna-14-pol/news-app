@@ -3,9 +3,9 @@ import React from 'react';
 
 
 const NewsCard = (props) => (
-    <div className='NewsCard' >
+    <div className='NewsCard'  key={props.id}>
         <img src={props.urlToImage} alt=''/>
-        <div className='NewsCard-content'>
+        <div className='NewsCard-content'  key={props.id}>
             <h2>{props.title}</h2>
             {/* <p dangerouslySetInnerHTML={{__html:props.publishedAt}} /> */}
             <p>{props.description}</p>
